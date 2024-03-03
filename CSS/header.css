@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/Fonts/webfontkit-20240302-183716/sf_transrobotics-webfont.woff2') format('woff2'),
+         url('/Fonts/webfontkit-20240302-183716/sf_transrobotics-webfont.woff') format('woff');
+}
+
+/* Main Header Text CSS*/
+header {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 span:first-child {
+    padding-left: 1rem;
+    color: #A72436;
+    font-size: 8rem;
+}
+
+/* Image CSS */
+img {
+    width: 5rem;
+    height: auto;
+    padding-right: 1rem;
+}
+
+/* Classes */
+.tf {
+    font-family: 'CustomFont', Arial, sans-serif;
+}
+
+.start {
+    padding-left: 2em;
+    color: black;
+}
+
+/* .current {
+    color: #00B7DF;
+    background-color: black;
+} */
+
+/* .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+/* h1 .grid-item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+img .grid-item {
+    grid-column-start: 2;
+    grid-column-end: 3;
+} */ 

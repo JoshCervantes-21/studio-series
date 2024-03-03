@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/Fonts/webfontkit-20240302-183716/sf_transrobotics-webfont.woff2') format('woff2'),
+         url('/Fonts/webfontkit-20240302-183716/sf_transrobotics-webfont.woff') format('woff');
+}
+
+.tf {
+    font-family: 'CustomFont', Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #00B7DF;
+    text-decoration: none;
+}
+
+ul li {
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+    display: inline;
+}

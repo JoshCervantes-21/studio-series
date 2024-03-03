@@ -1,13 +1,4 @@
 /* Styles for the whole document */
 body {
-    background-color: black;
-}
-
-/* styles for the headers h1 */
-h1 span:first-child {
-    color: #A72436;
-}
-
-h1 span:last-child {
-    color: #00B7DF;
+    background-color: slategrey;
 }
