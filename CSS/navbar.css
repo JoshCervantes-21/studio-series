@@ -12,11 +12,39 @@ ul {
     list-style-type: none;
     background-color: #00B7DF;
     text-decoration: none;
+    position: relative;
+    overflow: hidden;
 }
+
+/* ul::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 70px solid red; 
+    border-bottom: 70px solid red; 
+    border-left: 50px solid #00B7DF; 
+    z-index: -1; 
+} */
+
 
 ul li {
     padding-left: 1em;
     padding-right: 1em;
-    color: white;
+    color: black;
     display: inline;
+}
+
+ul li a, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover {
+    color: #A72436;
+}
+
+.current {
+    color: #00B7DF;
+    background-color: black;
 }
