@@ -8,9 +8,36 @@
     font-family: 'CustomFont', Arial, sans-serif;
 }
 
+.navbar {
+    background-color: #00B7DF;
+    position: relative;
+    display: inline;
+    overflow: hidden;
+    float: left;
+}
+
+.navbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    transform-origin: top right;
+    transform: skewY(35deg);
+}
+
+
+.bar {
+    background-color: #00B7DF;
+    color: #00B7DF;
+    /* position: fixed; */
+}
+
 ul {
     list-style-type: none;
-    background-color: #00B7DF;
+    /* background-color: #00B7DF; */
     text-decoration: none;
     position: relative;
     overflow: hidden;
@@ -44,7 +71,14 @@ ul li a:hover {
     color: #A72436;
 }
 
-.current {
+/* .current {
     color: #00B7DF;
     background-color: black;
+} */
+
+.start {
+    padding-left: 2em;
+    font-size: 2em;
+    transform: skew(10deg);
+    color: black;
 }

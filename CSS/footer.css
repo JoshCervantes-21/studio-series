@@ -2,9 +2,33 @@ footer {
     position: fixed;
     bottom: 0; 
     width: 100%;
-    background-color: #00B7DF;
+    background-color: #A72436;
     color: black;
     text-align: center;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; /* Adjust as needed to control the angle */
+    height: 50%;
+    background-color: black; /* Transparent background */
+    transform-origin: top left; /* Set the origin to the top right */
+    transform: skewY(-35deg); /* Adjust the angle */
+}
+
+footer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; /* Adjust as needed to control the angle */
+    height: 50%;
+    background-color: black; /* Transparent background */
+    transform-origin: top right; /* Set the origin to the top right */
+    transform: skewY(35deg); /* Adjust the angle */
 }
 
 @font-face {
