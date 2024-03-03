@@ -8,12 +8,18 @@
     font-family: 'CustomFont', Arial, sans-serif;
 }
 
+.container {
+    display: flex;
+    /* align-items: center; */
+    align-items: flex-end;
+}
+
+
 .navbar {
     background-color: #00B7DF;
+    flex: 0 0 53em;
     position: relative;
-    display: inline;
     overflow: hidden;
-    float: left;
 }
 
 .navbar::after {
@@ -21,8 +27,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
-    height: 50%;
+    width: 2.85%;
+    height: 40%;
     background-color: black;
     transform-origin: top right;
     transform: skewY(35deg);
@@ -32,7 +38,8 @@
 .bar {
     background-color: #00B7DF;
     color: #00B7DF;
-    /* position: fixed; */
+    height: 20px;
+    width: 70em;
 }
 
 ul {
@@ -42,18 +49,6 @@ ul {
     position: relative;
     overflow: hidden;
 }
-
-/* ul::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-top: 70px solid red; 
-    border-bottom: 70px solid red; 
-    border-left: 50px solid #00B7DF; 
-    z-index: -1; 
-} */
-
 
 ul li {
     padding-left: 1em;
@@ -71,14 +66,8 @@ ul li a:hover {
     color: #A72436;
 }
 
-/* .current {
-    color: #00B7DF;
-    background-color: black;
-} */
-
 .start {
     padding-left: 2em;
     font-size: 2em;
-    transform: skew(10deg);
     color: black;
 }
