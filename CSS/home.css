@@ -1,0 +1,26 @@
+.section {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 3rem;
+}
+
+.content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.subcontent {
+    padding-left: 3.5rem;
+    padding-top: 1rem;
+    font-style: italic;
+}
+
+.subcontent a {
+    color: white;
+    text-decoration: none;
+}
+
+.subcontent a:hover {
+    color: #00B7DF;
+}

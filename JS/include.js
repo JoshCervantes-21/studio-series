@@ -3,6 +3,7 @@ function includeHTML() {
     var header = document.getElementById("header");
     var footer = document.getElementById("footer");
     var navbar = document.getElementById("navbar");
+    var home = document.getElementById("home");
 
     if (header) {
         fetch("/Pages/header.html")
@@ -17,6 +18,14 @@ function includeHTML() {
             .then(response => response.text())
             .then(data => {
                 navbar.innerHTML = data;
+            });
+    }
+
+    if (home) {
+        fetch("/Pages/home.html")
+            .then(response => response.text())
+            .then(data => {
+                home.innerHTML = data;
             });
     }
 
